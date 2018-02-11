@@ -110,7 +110,7 @@ contract NeueToken is StandardToken { // CHANGE THIS. Update the contract name.
         name = "NeueToken";                                   // Set the name for display purposes (CHANGE THIS)
         decimals = 0;                                               // Amount of decimals for display purposes (CHANGE THIS)
         symbol = "NTK";                                             // Set the symbol for display purposes (CHANGE THIS)
-        unitsOneEthCanBuy = 1;                                      // Set the price of your token for the ICO (CHANGE THIS)
+        unitsOneEthCanBuy = 100;                                      // Set the price of your token for the ICO (CHANGE THIS)
         fundsWallet = msg.sender;                                    // The owner of the contract gets ETH
     }
 
