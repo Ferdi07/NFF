@@ -5,7 +5,7 @@ interface token {
     function balanceOf(address) external returns (uint256);
 }
 
-contract CR4 {
+contract CR5 {
     address public beneficiary;
     uint public fundingGoal;
     uint public amountRaised;
@@ -24,7 +24,7 @@ contract CR4 {
      *
      * Setup the owner
      */
-    function CR4(
+    function CR5(
         address ifSuccessfulSendTo,
         uint fundingGoalInEthers,
         uint durationInMinutes,
