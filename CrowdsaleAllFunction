@@ -65,6 +65,11 @@ contract CR8 {
         crowdsaleClosed = false;
         } 
         else if (amountRaised < fundingGoal && now < deadline){
+            fundingGoalReached = true;
+            GoalReached(beneficiary, amountRaised);
+            crowdsaleClosed = false;
+        }
+        else if (amountRaised < fundingGoal && now >= deadline){
             fundingGoalReached = false;
             GoalReached(beneficiary, amountRaised);
             crowdsaleClosed = true;
